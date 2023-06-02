@@ -1,0 +1,375 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Start Navbar*/
+nav{
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+    background-color: rgb(229, 244, 251);
+}
+.left-side-nav{
+    display: flex;
+    align-items: center;
+}
+.logo{
+    width: 100px;
+    height: 60px;
+    margin-right: 50px;
+    
+}
+nav a{
+    position: relative;
+    font-size: 1.2em;
+    color: black;
+    text-decoration: none;
+    font-weight: 500;
+    margin-right: 40px;
+
+}
+nav .others::after{
+    background-color: rgb(129, 84, 143);
+    content: '';
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    height: 3px;
+    border-radius: 5px;
+    transform-origin: right;
+    transform: scale(0);
+    transition:all 0.5s ease
+
+}
+nav .others:hover::after{
+    transform-origin: left;
+    transform: scale(1);
+}
+.left-side-nav .active{
+    border-bottom: 3px solid  rgb(129, 84, 143);
+}
+.btn-login{
+    width: 100px;
+    height: 35px;
+    background-color: white;
+    border: none;
+    border-radius: 30px;
+    outline: none;
+    cursor: pointer;
+    font-size: 1rem;
+    color: black;
+    font: 500;
+    transition: 0.5s;
+}
+.btn-login:hover{
+    background-color:rgb(129, 84, 143) ;
+    color: white;
+}
+/*End Navbar*/
+
+/*Start sec 1*/
+.sec1{
+    max-width: 100%;
+    height: 900px;
+    position: relative;
+}
+.sec1-background{
+    position: absolute;
+    width: 100%;
+    height: 800px;
+}
+.sec1-content{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    
+}
+
+.img-right-sec1{
+    position: absolute;
+    right: 20px;
+}
+.first{
+    position: absolute;
+    z-index: 3;
+    top: 490px;
+    right: 200px;
+}
+
+.second{
+    position: absolute;
+    right: 290px;
+    z-index: 2;
+}
+.third{
+    position: absolute;
+    z-index: 1;
+    width: 860px;
+}
+.sec1-left-side h1{
+  margin-left: 130px;
+  margin-top: 278px;
+  color: rgb(117,132 , 139);
+  font-size: 3.5rem;
+}
+
+.sec1-left-side p{
+    margin-left: 130px;
+    width: 740px;
+    color: rgb(165,180 , 187);
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+.waves{
+    max-width: 100%;
+    position: absolute;
+    z-index: 1;
+    top: 630px;
+    right: 500px;
+}
+/*End sec 1*/
+
+/*Start sec2*/
+.sec2{
+    position: relative;
+    height: 950px;
+}
+.sec2-background{
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top:39%;
+    left: 50%;
+}
+.first-group{
+    position: absolute;
+    width: 300px;
+    top:135px;
+    left: 188px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.h1-font-advantages{
+    color:rgb(117,132 , 139) ;
+}
+.p-font-advantages{
+    max-width: 280px;
+    text-align: center;
+    color:rgb(165,180 , 187);
+    font-weight: 600;
+    
+}
+.second-group{
+    position: absolute;
+    width: 300px;
+    top:300px;
+    left: 800px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.third-group{
+    position: absolute;
+    width: 300px;
+    top:680px;
+    left: 1195px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.fourth-group{
+    position: absolute;
+    width: 380px;
+    top:640px;
+    left: 190px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.fourth-group img{
+    position: relative;
+    width: 100%;
+    z-index: -1;
+}
+.para-group4{
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 47%;
+    left: 55%;
+    text-align: left;
+    color:rgb(234, 240, 242);
+}
+.para-group4 .first-para{
+    font-size: 1.1rem;
+
+}
+.para-group4 .second-para{
+    font-size: 3.2rem;
+
+}
+/*End sec2*/
+    
+
+
+/*start Section3 */
+.sec3{
+    margin-top: 200px ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.sec3 .right{
+    margin-left: 200px;
+ }
+ .sec3 .right img{
+    width: 200px;
+ }
+ .sec3 .left{
+    margin-right: 200px;
+ }
+ .sec3 .left img{
+    width: 200px;
+ }
+.sec3 .fa-caret-left{
+    font-size: 25px;
+}
+.sec3 .fa-caret-right{
+    font-size: 25px;
+}
+.sec3 .middle{
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.sec3 .middle img{
+    width: 400px;
+}
+.h1-font-advantages2{
+    color:rgb(117,132 , 139) ;
+}
+.p-font-advantages2{
+    
+    color:rgb(165,180 , 187);
+    font-weight: 600;
+    
+}
+
+.fa-caret-left{
+    position: absolute;
+    color: rgb(99, 112, 118);
+    top: 240px;
+}
+
+.fa-caret-right{
+    position: absolute;
+    color: rgb(99, 112, 118);
+    top: 240px;
+}
+.sec3-text{
+    text-align: center; 
+    width: 400px;
+}
+/*End section 3*/
+
+/*start section 4*/
+.sec4 {
+    position: relative;
+    display: flex; 
+    justify-content: space-around;
+    align-items: flex-end;
+    height: 600px;
+} 
+.footer-background{
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+}
+.footer-left{
+    position: absolute;
+    left: 145px;
+}
+.footer-pic{
+    position: absolute;
+    width: 800px;
+    right: 150px;
+    top: 67px;
+}
+.footer-menue{
+    margin-bottom: 60px;
+}
+.footer-menue a{
+    position: relative;
+    font-size: 1rem;
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    margin-right: 40px;
+}
+.footer-menue a:hover{
+    color:rgb(178, 162, 183) ;   
+}
+.instagram {
+    width: 30px;
+}
+.whatsapp{
+    margin-left: 10px;
+    width: 30px;
+}
+.facebook{
+    margin-left: 10px;
+}
+.sec4 .div-buttons{
+    display: flex;
+    
+ 
+}
+.sec4 .buttons{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    align-items: center;
+    width: 124px;
+    height: 50px;
+    padding: 5px;
+    background-color: white;
+    border: none;
+    border-radius: 7px;
+    outline: none;
+    cursor: pointer;
+    font-size: 1rem;
+    color: black;
+    font: 500;
+    transition: 0.5s;
+    margin-bottom: 25px;
+    
+}
+.sec4 .buttons:hover{
+    background-color:rgb(129, 84, 143) ;
+    color: white; 
+}
+.sec4 .buttons p{
+    font-size: 14px;
+    font-weight: bold;
+}
+.sec4 .right{
+    margin-left:  15px; ;
+}
+.position-icons{
+    margin-bottom: 25px; 
+}
+/*End section 4*/
