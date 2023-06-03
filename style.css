@@ -371,5 +371,6 @@ nav .others:hover::after{
 }
 .position-icons{
     margin-bottom: 25px; 
+    cursor: pointer;
 }
 /*End section 4*/
